@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc.exe DLLAllê∂ê¨",
+			"command": "gcc",
+			"args": [
+				"-g",
+				"RunXCOSDLL.c",
+				"TestBlock.c",
+				"TestBlock_Cblocks.c",
+				"TestBlock_void_io.c",
+				"-DNODLL",
+				"-shared",
+				"-fPIC",
+				"-o",
+				"bin/libRunXCOSDLL.so",
+                "-I","/home/pi/SCILAB/scilab-6.1.0/include/scilab",
+                "-I","/home/pi/SCILAB/scilab-6.1.0/include/scicos",
+                "-I","/home/pi/SCILAB/scilab-6.1.0/include/core",
+                "-I","/home/pi/SCILAB/scilab-6.1.0/include/scicos_blocks",
+                "-L/home/pi/SCILAB/scilab-6.1.0/lib/scilab",
+				"-lsciscicos"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "ÉRÉìÉpÉCÉâ: gcc.exe"
+		}
+	]
+}
